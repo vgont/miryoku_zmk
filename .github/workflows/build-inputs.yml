@@ -8,6 +8,7 @@ on:
       board:
         description: 'board'
         required: true
+        default: 'nice_nano_v2'
       shield:
         description: 'shield'
         required: false
