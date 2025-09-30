@@ -92,16 +92,28 @@ jobs:
             json=`echo "$2" | jq -cnR 'inputs | split(",";"")'`
             echo "$1=$json" >> $GITHUB_OUTPUT
           }
-          set-output "board" "${{ github.event.inputs.board }}"
-          set-output "shield" "${{ github.event.inputs.shield }}"
-          set-output "alphas" "${{ github.event.inputs.alphas }}"
-          set-output "nav" "${{ github.event.inputs.nav }}"
-          set-output "layers" "${{ github.event.inputs.layers }}"
-          set-output "mapping" "${{ github.event.inputs.mapping }}"
-          set-output "custom_config" "${{ github.event.inputs.custom_config }}"
-          set-output "kconfig" "${{ github.event.inputs.kconfig }}"
-          set-output "branches" "${{ github.event.inputs.branches }}"
-          set-output "modules" "${{ github.event.inputs.modules }}"
+
+          board="${{ github.event.inputs.board || 'nice_nano_v2' }}"
+          shield="${{ github.event.inputs.shield || 'corne_left,corne_right' }}"
+          alphas="${{ github.event.inputs.alphas || 'default' }}"
+          nav="${{ github.event.inputs.nav || 'default' }}"
+          layers="${{ github.event.inputs.layers || 'default' }}"
+          mapping="${{ github.event.inputs.mapping || 'default' }}"
+          custom_config="${{ github.event.inputs.custom_config || 'default' }}"
+          kconfig="${{ github.event.inputs.kconfig || 'CONFIG_ZMK_POINTING=y' }}"
+          branches="${{ github.event.inputs.branches || 'default' }}"
+          modules="${{ github.event.inputs.modules || 'default' }}"
+
+          set-output-json "board" "$board"
+          set-output-json "shield" "$shield"
+          set-output-json "alphas" "$alphas"
+          set-output-json "nav" "$nav"
+          set-output-json "layers" "$layers"
+          set-output-json "mapping" "$mapping"
+          set-output-json "custom_config" "$custom_config"
+          set-output-json "kconfig" "$kconfig"
+          set-output-json "branches" "$branches"
+          set-output-json "modules" "$modules"
   build:
     uses: ./.github/workflows/main.yml
     secrets: inherit
