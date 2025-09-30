@@ -11,7 +11,7 @@ on:
       shield:
         description: 'shield'
         required: false
-        default: 'default'
+        default: 'corne_left,corne_right'
       alphas:
         description: 'alphas'
         required: false
@@ -56,7 +56,7 @@ on:
       kconfig:
         description: 'kconfig'
         required: false
-        default: 'default'
+        default: 'CONFIG_ZMK_POINTING=y'
       branches:
         description: 'branches'
         required: false
