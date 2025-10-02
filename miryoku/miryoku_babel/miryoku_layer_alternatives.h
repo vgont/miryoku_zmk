@@ -390,4 +390,4 @@ U_NP,              U_NP,              U_BTN3,            U_BTN1,            U_BT
 &kp LCTRL,  &kp Q,     &kp W,     &kp E,     U_NA,     U_NA,     U_NA,     &kp UP,     U_NA,     &tog U_ISAAC, \
 U_NA,       &kp A,     &kp S,     &kp D,     U_NA,     U_NA,     &kp LEFT, &kp DOWN,   &kp RIGHT,U_NA, \
 &kp LSHFT,  U_NA,      U_NA,      U_NA,      U_NA,     U_NA,     U_NA,     U_NA,      U_NA,     U_NA, \
-U_NP,       U_NP,      U_LT(U_MEDIA, ESC),   &kp SPACE, &kp TAB,     &kp RET,  &kp BSPC, &kp DEL,   U_NP,     U_NP
+U_NP,       U_NP,      &kp ESC,   &kp SPACE, &kp TAB,     &kp RET,  &kp BSPC, &kp DEL,   U_NP,     U_NP
