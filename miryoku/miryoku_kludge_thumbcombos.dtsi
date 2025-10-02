@@ -11,13 +11,6 @@ thumbcombos_ ## LAYER ## _ ## POSITION { \
 };
 
 / {
-  combos {
-    compatible = "zmk,combos";
-    combo_isaac {
-      timeout-ms = <50>;                  
-      key-positions = <TAB ENTER>;  
-      bindings = <&tog U_ISAAC>;          
-    };
 #if defined (MIRYOKU_LAYERS_FLIP)
   #if defined (MIRYOKU_KLUDGE_THUMBCOMBOS_LEFT)
     MIRYOKU_KLUDGE_THUMBCOMBOS_MACRO(U_BASE, LEFT, &lt U_FUN DEL)
