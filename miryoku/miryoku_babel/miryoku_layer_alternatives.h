@@ -387,7 +387,7 @@ U_UND,             U_CUT,             U_CPY,             U_PST,             U_RD
 U_NP,              U_NP,              U_BTN3,            U_BTN1,            U_BTN2,            U_BTN2,            U_BTN1,            U_BTN3,            U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_ISAAC \
-&kp LCTRL,             &kp Q,             &kp W,             &kp E,             U_NA,             U_NA,             U_NA,             &kp UP,             U_NA,             U_NA,           \
-&kp TAB,             &kp A,             &kp S,             &kp D,             U_NA,             U_NA,             &kp LEFT,           &kp DOWN,             &kp RIGHT,             U_NA,           \
-&kp LSHFT,             U_NA,             U_NA,             U_NA,             U_NA,             U_NA,             U_NA,             U_NA,             U_NA,             U_NA,           \
-U_NP,             U_NP, &kp ESC,             &kp SPACE,             &kp TAB,             &kp RET,             &kp BSPC,          &kp DEL,              U_NP,             U_NP,           \
+&kp LCTRL,  &kp Q,     &kp W,     &kp E,     U_NA,     U_NA,     U_NA,     &kp UP,     U_NA,     U_NA, \
+U_NA,       &kp A,     &kp S,     &kp D,     U_NA,     U_NA,     &kp LEFT, &kp DOWN,   &kp RIGHT,U_NA, \
+&kp LSHFT,  U_NA,      U_NA,      U_NA,      U_NA,     U_NA,     U_NA,     U_NA,      U_NA,     U_NA, \
+U_NP,       U_NP,      &kp ESC,   &kp SPACE, &kp TAB,     &kp RET,  &kp BSPC, &kp DEL,   U_NP,     U_NP
