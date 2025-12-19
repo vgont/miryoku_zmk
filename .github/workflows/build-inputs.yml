@@ -60,7 +60,7 @@ on:
       kconfig:
         description: 'kconfig'
         required: false
-        default: 'CONFIG_ZMK_POINTING=y'
+        default: 'CONFIG_ZMK_POINTING=y\nCONFIG_BT_CTLR_TX_PWR_PLUS_8=y\nCONFIG_ZMK_BLE_EXPERIMENTAL_CONN=y'
       branches:
         description: 'branches'
         required: false
@@ -99,7 +99,7 @@ jobs:
           set-output "layers" "${{ github.event.inputs.layers }}"
           set-output "mapping" "${{ github.event.inputs.mapping }}"
           set-output "custom_config" "${{ github.event.inputs.custom_config }}"
-          set-output "kconfig" "CONFIG_ZMK_POINTING=y"
+          set-output "kconfig" "CONFIG_ZMK_POINTING=y\nCONFIG_BT_CTLR_TX_PWR_PLUS_8=y\nCONFIG_ZMK_BLE_EXPERIMENTAL_CONN=y"
           set-output "branches" "${{ github.event.inputs.branches }}"
           set-output "modules" "${{ github.event.inputs.modules }}"
   build:
