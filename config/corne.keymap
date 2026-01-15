@@ -10,18 +10,30 @@
         compatible = "zmk,combos";
         combo_del {
             timeout-ms = <50>;
-            key-positions = <2 3>;
+            key-positions = <13 14>;
             bindings = <&kp DEL>;
+
         };
-        combo_lbkt {
+        combo_lbkt { // [
             timeout-ms = <50>;
-            key-positions = <7 8>;
+            key-positions = <2 3>;
             bindings = <&kp LBKT>;
         };
-        combo_rbkt {
+        combo_rbkt { // ]
             timeout-ms = <50>;
             key-positions = <8 9>;
             bindings = <&kp RBKT>;
+        };
+
+        combo_lbrc { // {
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            bindings = <&kp LBRC>;
+        };
+        combo_rbrc { // }
+            timeout-ms = <50>;
+            key-positions = <32 33>;
+            bindings = <&kp RBRC>;
         };
     };
 };
