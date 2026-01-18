@@ -74,7 +74,7 @@ U_NP,              U_NP,              U_BTN3,            U_BTN1,            U_BT
 
 #define MIRYOKU_ALTERNATIVES_QWERTY_WITH_ARROWS \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
-&kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp UP,            &kp SQT,           \
+&kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp UP,            &kp ESC,           \
 &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp LEFT,          &kp DOWN,          &kp RIGHT,         \
 U_NP,              U_NP,              U_NP,              &kp SPACE,         &kp TAB,           &kp RET,           &kp BSPC,          U_NP,              U_NP,              U_NP
 
