@@ -12,7 +12,7 @@ on:
       shield:
         description: 'shield'
         required: false
-        default: 'corne_left,corne_right'
+        default: 'corne_left'
       alphas:
         description: 'alphas'
         required: false
@@ -57,7 +57,7 @@ on:
       kconfig:
         description: 'kconfig'
         required: false
-        default: 'CONFIG_ZMK_POINTING=y\nCONFIG_BT_CTLR_TX_PWR_PLUS_8=y\nCONFIG_ZMK_BLE_EXPERIMENTAL_CONN=y'
+        default: 'default'
       branches:
         description: 'branches'
         required: false
