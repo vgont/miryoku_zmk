@@ -12,7 +12,7 @@ on:
       shield:
         description: 'shield'
         required: false
-        default: 'corne_left'
+        default: 'klotz_left'
       alphas:
         description: 'alphas'
         required: false
