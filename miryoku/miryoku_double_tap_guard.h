@@ -3,6 +3,8 @@
 
 #pragma once
 
+#if !defined (U_BOOT)
+
 #if defined (MIRYOKU_KLUDGE_DOUBLETAPBOOT)
   #if defined (MIRYOKU_KLUDGE_SOFT_OFF)
     #define U_BOOT &u_soft_off
@@ -16,3 +18,5 @@
     #define U_BOOT &bootloader
   #endif
 #endif
+
+#endif // U_BOOT
