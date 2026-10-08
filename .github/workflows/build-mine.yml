@@ -1,9 +1,10 @@
 # Personal build. Replicates the inputs of the last klotz Build Inputs run,
-# 2026-02-05 (run 21694465012), so they don't have to be retyped:
+# 2026-02-05 (run 21694465012), so they don't have to be retyped.
 #
-#   board: nice_nano
-#   shield: klotz_left
-#   everything else: default
+# The board is the ZMK variant of the nice!nano. Plain `nice_nano` is the bare
+# board definition: its defconfig sets neither CONFIG_ZMK_USB nor
+# CONFIG_ZMK_BLE, so it builds and flashes but is not a keyboard.
+# Use `nice_nano/nrf52840/zmk` for a v2.
 #
 name: 'Build Mine'
 on: workflow_dispatch
@@ -12,5 +13,5 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '["nice_nano"]'
+      board: '["nice_nano@1.0.0/nrf52840/zmk"]'
       shield: '["klotz_left"]'

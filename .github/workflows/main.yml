@@ -155,7 +155,8 @@ jobs:
             modules="${{ matrix.modules }}"
           fi
 
-          run_name=`echo $run_name | tr ' ' '-'`
+          # artifact names cannot contain '/', which board targets now do
+          run_name=`echo $run_name | tr ' /' '--'`
           echo "run_name=$run_name" >> $GITHUB_OUTPUT
 
           echo "::endgroup::"
